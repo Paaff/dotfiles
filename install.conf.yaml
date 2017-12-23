@@ -3,8 +3,6 @@
 - link:
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
@@ -13,5 +11,10 @@
     ~/.config/i3:
         path: config/i3/
         create: true
-
+    ~/.config/polybar:
+        path: config/polybar/
+        create: true
+    ~/.config/termite:
+        path: config/termite/
+        create: true
 
