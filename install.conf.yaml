@@ -23,3 +23,6 @@
     ~/.config/compton:
         path: config/compton/
         create: true
+    ~/.config/nvim:
+        path: config/nvim/
+        create: true
