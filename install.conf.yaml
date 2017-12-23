@@ -17,4 +17,6 @@
     ~/.config/termite:
         path: config/termite/
         create: true
-
+    ~/.config/scripts:
+        path: config/scripts/
+        create: true
