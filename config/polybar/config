@@ -26,7 +26,13 @@ module-margin = 3
 
 modules-left = 
 modules-center = 
-modules-right = wlan battery date
+modules-right = cpu wlan battery date
+
+[module/cpu]
+type = internal/cpu
+format-prefix = "CPU "
+
+label = %percentage%%
 
 [module/wlan]
 type = internal/network
