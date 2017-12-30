@@ -26,7 +26,26 @@ module-margin = 3
 
 modules-left = 
 modules-center = 
-modules-right = battery date
+modules-right = wlan battery date
+
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+
+format-connected = "<label-connected>"
+format-connected-prefix = "   "
+
+label-connected = %essid%
+label-disconnected =   WLAN
+
+[module/lan]
+type = internal/network
+interface = enp1s0
+interval = 3.0
+
+label-connected =    %{T3}%local_ip%%{T-}
+label-disconnected-foreground = #66
 
 [module/battery]
 type = internal/battery
