@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# When connecting to a synergy server as a client change the keyboard layout to the original.
+function sc() {
+	synergyc $1 && setxkbmap $(setxkbmap -query | grep "^layout:" | awk -F ": *" '{print $2}')
+}
+

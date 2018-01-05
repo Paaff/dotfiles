@@ -22,11 +22,32 @@ font-0 = "Source Code Pro:size=11;1"
 font-1 = "FontAwesome:pixelsize=12;1"
 
 padding-right = 4
+padding-left = 4
 module-margin = 3
 
-modules-left = 
+modules-left = vol
 modules-center = 
 modules-right = mem cpu wlan battery date
+
+
+[module/vol]
+type = internal/volume
+master-mixer = IEC958
+
+format-volume = = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+
+#label-muted =  MUTED
+
+label-muted = muted
+
+ramp-volume-0 = 0
+ramp-volume-1 = 1
+ramp-volume-2 = 2
+#ramp-volume-0 = 
+#ramp-volume-1 = 
+#ramp-volume-2 = 
+
 
 [module/cpu]
 type = internal/cpu
