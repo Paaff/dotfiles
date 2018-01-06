@@ -5,3 +5,8 @@ function sc() {
 	synergyc $1 && setxkbmap $(setxkbmap -query | grep "^layout:" | awk -F ": *" '{print $2}')
 }
 
+# Using nmcli, take connection name and device name and connect to that.
+function con() {
+    nmcli -p con up "$1" ifname $2
+}
+
