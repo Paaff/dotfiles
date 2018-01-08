@@ -7,6 +7,16 @@ function sc() {
 
 # Using nmcli, take connection name and device name and connect to that.
 function con() {
-    nmcli -p con up "$1" ifname $2
-}
+    if [ $# -eq 0 ]
+    then
+        echo "No arguments were given. You need to atleast provide the access-point name."
+        return
+    fi
 
+    if [ $# -eq 1 ]
+    then
+        nmcli -p con up "$1" ifname wlp2s0
+    else
+        nmcli -p con up "$1" ifname $2
+    fi
+}
