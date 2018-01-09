@@ -4,6 +4,8 @@ background = #EDEDED
 foreground = #000000
 alert = #BF616A
 
+border = #8A9899
+
 # Global
 [global/wm]
 margin-top = 5
@@ -17,6 +19,9 @@ height = 26
 
 background = ${colors.background}
 foreground = ${colors.foreground}
+
+border-bottom-size = 3
+border-bottom-color = ${colors.border}
 
 font-0 = "Source Code Pro:size=11;1"
 font-1 = "FontAwesome:pixelsize=12;1"
