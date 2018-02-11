@@ -192,7 +192,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+shift+x exec ~/.config/scripts/lock.sh 
 
 # Wallpaper
-exec_always feh --bg-scale /home/paaf/Pictures/Wallpapers/winter_trees.jpg
+exec_always feh --bg-scale /home/paaf/Pictures/Wallpapers/doom_corner.jpg
 
 # Assinged Applications
 #assign [class="Termite"] $workspace1

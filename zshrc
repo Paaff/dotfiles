@@ -7,17 +7,9 @@ export ZSH=/home/paaf/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="geometry/geometry"
-ZSH_THEME="random"
-# Geometry plugins
-GEOMETRY_PROMPT_PLUGINS=(virtualenv exec_time git jobs hg +rustup)
-GEOMETRY_COLOR_VIRTUALENV=green
+ZSH_THEME="spaceship"
 
-# Geometry configs (TODO: Move elsewhere!)
-GEOMETRY_COLOR_EXIT_VALUE="magenta"         # prompt symbol color when exit value is != 0
-GEOMETRY_COLOR_PROMPT="white"               # prompt symbol color
-GEOMETRY_COLOR_ROOT="red"                   # root prompt symbol color
-GEOMETRY_COLOR_DIR="blue"                   # current directory color:
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
