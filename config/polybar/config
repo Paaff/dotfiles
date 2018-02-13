@@ -1,10 +1,10 @@
 # Colors
 [colors]
-background = #EDEDED 
-foreground = #000000
+background = #332b2f 
+foreground = #d26e55
 alert = #BF616A
 
-border = #8A9899
+border = #
 
 # Global
 [global/wm]
@@ -101,7 +101,7 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.alert}
+ramp-capacity-foreground = ${colors.foreground}
 
 animation-charging-0 = 
 animation-charging-1 = 
