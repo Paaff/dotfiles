@@ -7,12 +7,22 @@ let mapleader = ","
 
 " Indention
 filetype plugin indent on
+
 " show existing tab with 4 spaces width
 set tabstop=4
+
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
+
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" Set the gutter width
+set numberwidth=3
+
+" Set line numbers on
+set number
+
 
 " Clipboard
 set clipboard+=unnamedplus
@@ -45,13 +55,9 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 syntax on			 		" Syntax highlighting
-set number
+
 " Colorscheme 
-"set termguicolors
 colorscheme wal
-"hi Normal ctermbg=none
-"hi NonText ctermbg=none
-"hi LineNr ctermbg=none
 
 " Airline
 "let g:airline_powerline_fonts = 1
