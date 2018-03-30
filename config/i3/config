@@ -168,7 +168,7 @@ for_window [class="^.*"] border pixel 0
 smart_gaps on
 gaps inner 10
 gaps outer 4
-
+smart_borders on
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set IEC958 1+  #increase sound volume

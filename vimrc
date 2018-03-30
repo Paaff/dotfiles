@@ -1,4 +1,3 @@
-
 let mapleader = ","
 " Add runtime path for vim if neovim is launched.
 " if has('nvim')
@@ -22,7 +21,6 @@ set numberwidth=3
 
 " Set line numbers on
 set number
-
 
 " Clipboard
 set clipboard+=unnamedplus
@@ -51,6 +49,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Programming
 Plug 'Valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
+Plug 'chrisbra/Colorizer'
 
 call plug#end()
 
@@ -60,10 +59,10 @@ syntax on			 		" Syntax highlighting
 colorscheme wal
 
 " Airline
-"let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'base16_spacemacs'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+"let g:airline_theme='base16_spacemacs' " Currently broken
 
 " Nerdtree
-" autocmd VimEnter * NERDTree 			" Always open Nerdtree when opening vim.
-" autocmd VimEnter * wincmd p			" Change focus from Nerdtree to the file.
+autocmd VimEnter * NERDTree 			" Always open Nerdtree when opening vim.
+autocmd VimEnter * wincmd p			" Change focus from Nerdtree to the file.
