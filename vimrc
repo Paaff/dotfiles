@@ -50,6 +50,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'chrisbra/Colorizer'
+Plug 'fatih/vim-go'
 
 call plug#end()
 
