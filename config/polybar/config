@@ -20,9 +20,6 @@ height = 26
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-bottom-size = 3
-border-bottom-color = ${colors.border}
-
 font-0 = "Source Code Pro:size=9;1"
 font-1 = "FontAwesome:pixelsize=12;1"
 
@@ -30,28 +27,57 @@ padding-right = 4
 padding-left = 4
 module-margin = 3
 
-modules-left = vol
-modules-center = 
-modules-right = mem cpu wlan battery date
+modules-left = i3 xwindow
+modules-center = date
+modules-right = mem cpu wlan battery vol
 
+[module/i3]
+type = internal/i3
+
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
+
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = ${colors.background}
+
+label-focused = %index%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.alert}
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-underline = ${colors.alert}
+label-visible-padding = 4
+
+label-urgent = %index%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.background}
+label-urgent-underline = ${colors.alert}
+label-urgent-padding = 2
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%
+label-padding = 10
+label-foreground = ${colors.foreground}
 
 [module/vol]
-type = internal/volume
+type = internal/alsa
 master-mixer = IEC958
 
 format-volume = = <ramp-volume> <label-volume>
 label-volume = %percentage%%
 
-#label-muted =  MUTED
+label-muted =  MUTED
 
-label-muted = muted
-
-ramp-volume-0 = 0
-ramp-volume-1 = 1
-ramp-volume-2 = 2
-#ramp-volume-0 = 
-#ramp-volume-1 = 
-#ramp-volume-2 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 
 [module/cpu]
@@ -117,7 +143,6 @@ interval = 5
 time = "%H:%M"
 date = "%d-%m-%Y"
 label = "%time%, %date%"
-format-prefix = " "
 format-prefix-background = ${colors.background}
 ntAwesome:pixelsize=8;1"
 label-background = ${colors.background}

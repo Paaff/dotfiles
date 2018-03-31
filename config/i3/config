@@ -171,9 +171,16 @@ gaps outer 4
 smart_borders on
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set IEC958 1+  #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set IEC958 1-  #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id amixer -q set IEC958 toggle           # mute sound
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 3%- 
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 3%+
+
+#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+#bindsym XF86AudioMute exec amixer -q set Master toggle
+
+#bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set IEC958 1+  #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set IEC958 1-  #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id amixer -q set IEC958 toggle           # mute sound
 
 # Sreen brightness controls
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
