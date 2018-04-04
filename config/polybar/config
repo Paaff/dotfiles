@@ -29,7 +29,7 @@ module-margin = 3
 
 modules-left = i3 xwindow
 modules-center = date
-modules-right = mem cpu wlan battery vol
+modules-right = mem cpu wlan lan battery vol
 
 [module/i3]
 type = internal/i3
