@@ -11,9 +11,11 @@ PATH="$1"
 # Function to check whether the or not the directory has a mkv file in it.
 hasMKV() {
     for f in $1/*; do
-        if [ ${f: -4} == ".mkv" ]; then
-            return 1
-        fi
+        case ${f: -4} in
+            ".mkv" | ".avi" | ".iso" | ".ISO")
+                return 1 ;;
+            *)
+        esac
     done
     
     # No .mkv files found, return the path so we know which dir it is.
