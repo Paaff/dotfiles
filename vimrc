@@ -77,3 +77,4 @@ let g:airline#extensions#tabline#enabled=1
 " Nerdtree
 autocmd VimEnter * NERDTree 			" Always open Nerdtree when opening vim.
 autocmd VimEnter * wincmd p			" Change focus from Nerdtree to the file.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " Close NERDTree if it is the last window open
