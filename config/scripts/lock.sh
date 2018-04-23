@@ -1,6 +1,6 @@
 #!/bin/bash
-scrot -e 'convert -blur 0x3 $f '$HOME'/Pictures/lockbg.png'
-convert -gravity center -composite $HOME/Pictures/lockbg.png $HOME/Pictures/lock.png $HOME/Pictures/lockfinal.png
-i3lock -u -i $HOME/Pictures/lockfinal.png
-rm $HOME/Pictures/lockfinal.png $HOME/Pictures/lockbg.png
+scrot -e 'convert -blur 0x3 $f '$HOME'/pictures/lockbg.png'
+convert -gravity center -composite $HOME/pictures/lockbg.png $HOME/pictures/lock.png $HOME/pictures/lockfinal.png
+i3lock -u -i $HOME/pictures/lockfinal.png
+rm $HOME/pictures/lockfinal.png $HOME/pictures/lockbg.png
 

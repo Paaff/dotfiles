@@ -20,7 +20,7 @@ height = 26
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = "Source Code Pro:size=9;1"
+font-0 = "Source Code Pro:size=11;1"
 font-1 = "FontAwesome:pixelsize=12;1"
 
 padding-right = 4

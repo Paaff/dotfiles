@@ -4,6 +4,9 @@ let mapleader = ","
 "	set rtp^=~/.vim
 " endif
 
+" Filetype plugin
+filetype plugin on
+
 " Indention
 filetype plugin indent on
 
@@ -47,10 +50,26 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Programming
-Plug 'Valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'chrisbra/Colorizer'
+
+" Golang
 Plug 'fatih/vim-go'
+
+" Golang - Deoplete
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+" Golang - Deoplete-go
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
+" Golang - gocode daemon to be used with Deoplete
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 call plug#end()
 
@@ -65,6 +84,11 @@ let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
 " Colorscheme 
 colorscheme wal

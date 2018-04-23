@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # GOPATH
-export GOPATH=$HOME/Programming/gocode
+export GOPATH=$HOME/programming/go
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/paaf/.oh-my-zsh
@@ -124,6 +124,3 @@ man() {
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 (cat ~/.cache/wal/sequences &)
-
-
-

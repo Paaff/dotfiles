@@ -40,7 +40,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec dmenu_run
 
 # rofi drop-in
-bindsym $mod+d exec rofi -show drun 
+bindsym $mod+d exec rofi -show run 
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -168,7 +168,6 @@ for_window [class="^.*"] border pixel 0
 smart_gaps on
 gaps inner 10
 gaps outer 4
-smart_borders on
 
 # Pulse Audio controls
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 3%- 
@@ -196,10 +195,10 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Lock
-bindsym $mod+shift+x exec ~/.config/scripts/lock.sh 
+bindsym $mod+Shift+x exec ~/.config/scripts/lock.sh 
 
 # Wallpaper
-exec_always feh --bg-scale /home/paaf/Pictures/Wallpapers/doom_corner.jpg
+exec_always feh --bg-scale /home/paaf/pictures/Wallpapers/doom_corner.jpg
 
 # Assinged Applications
 #assign [class="Termite"] $workspace1
