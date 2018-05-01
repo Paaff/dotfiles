@@ -82,13 +82,13 @@ ramp-volume-2 = 
 
 [module/cpu]
 type = internal/cpu
-format-prefix = "CPU "
+format-prefix = "cpu "
 
 label = %percentage%%
 
 [module/mem]
 type = internal/memory
-format-prefix = "MEM "
+format-prefix = "mem "
 
 label = %percentage_used%%
 
